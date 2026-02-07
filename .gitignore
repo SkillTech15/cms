@@ -122,10 +122,13 @@ coverage
 ############################
 
 .env
-license.txt
-exports
-.strapi
+.env.*
+.cache
+.build
 dist
-build
-.strapi-updater.json
-.strapi-cloud.json
+node_modules
+.tmp
+
+# Ignore uploads content but keep folder
+public/uploads/*
+!public/uploads/.gitkeep
