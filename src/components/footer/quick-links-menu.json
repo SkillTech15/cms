@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_footer_quick_links_menus",
+  "info": {
+    "displayName": "QuickLinksMenu"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Link": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

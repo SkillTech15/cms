@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_header_main_menus",
+  "info": {
+    "displayName": "mainMenu"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Link": {
+      "type": "string"
+    },
+    "IsDropdown": {
+      "type": "boolean"
+    }
+  },
+  "config": {}
+}

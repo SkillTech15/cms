@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_product_feature_points",
+  "info": {
+    "displayName": "FeaturePoint",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Text": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

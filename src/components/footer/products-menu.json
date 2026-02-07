@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_footer_products_menus",
+  "info": {
+    "displayName": "ProductsMenu"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Link": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
