@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_rental_services_faq_items",
+  "info": {
+    "displayName": "FAQItem"
+  },
+  "options": {},
+  "attributes": {
+    "Question": {
+      "type": "string"
+    },
+    "Answer": {
+      "type": "blocks"
+    },
+    "IsOpenByDefault": {
+      "type": "boolean"
+    }
+  },
+  "config": {}
+}

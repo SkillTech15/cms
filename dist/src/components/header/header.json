@@ -1,0 +1,78 @@
+{
+    "collectionName": "components_header_headers",
+    "info": {
+        "displayName": "Header"
+    },
+    "options": {},
+    "attributes": {
+        "topBarEnabled": {
+            "type": "boolean"
+        },
+        "topBarText": {
+            "type": "text"
+        },
+        "topBarLinks": {
+            "type": "component",
+            "component": "header.link-item",
+            "repeatable": true
+        },
+        "currencySwitcher": {
+            "type": "component",
+            "component": "header.currency-switcher",
+            "repeatable": true
+        },
+        "languageSwitcher": {
+            "type": "component",
+            "component": "header.language-switcher",
+            "repeatable": true
+        },
+        "Logo": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "LogoLink": {
+            "type": "string"
+        },
+        "searchEnabled": {
+            "type": "boolean"
+        },
+        "searchPlaceholder": {
+            "type": "string"
+        },
+        "searchCategoryLabel": {
+            "type": "string"
+        },
+        "searchUseCategories": {
+            "type": "boolean"
+        },
+        "hotlineLabel": {
+            "type": "string"
+        },
+        "hotlineLabelLink": {
+            "type": "string"
+        },
+        "hotlineNumber": {
+            "type": "string"
+        },
+        "hotlineLink": {
+            "type": "string"
+        },
+        "mainMenu": {
+            "type": "component",
+            "component": "header.main-menu",
+            "repeatable": true
+        },
+        "promoLinks": {
+            "type": "component",
+            "component": "header.promo-links",
+            "repeatable": true
+        }
+    },
+    "config": {}
+}

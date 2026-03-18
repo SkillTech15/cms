@@ -1,0 +1,25 @@
+{
+    "collectionName": "components_footer_contact_details",
+    "info": {
+        "displayName": "ContactDetails"
+    },
+    "options": {},
+    "attributes": {
+        "IsIcon": {
+            "type": "boolean"
+        },
+        "IconClass": {
+            "type": "string"
+        },
+        "Name": {
+            "type": "string"
+        },
+        "IsLink": {
+            "type": "boolean"
+        },
+        "Link": {
+            "type": "string"
+        }
+    },
+    "config": {}
+}

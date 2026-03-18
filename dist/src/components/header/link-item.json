@@ -1,0 +1,16 @@
+{
+    "collectionName": "components_header_link_items",
+    "info": {
+        "displayName": "LinkItem"
+    },
+    "options": {},
+    "attributes": {
+        "Name": {
+            "type": "string"
+        },
+        "Link": {
+            "type": "string"
+        }
+    },
+    "config": {}
+}

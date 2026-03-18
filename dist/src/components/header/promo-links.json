@@ -1,0 +1,16 @@
+{
+    "collectionName": "components_header_promo_links",
+    "info": {
+        "displayName": "promoLinks"
+    },
+    "options": {},
+    "attributes": {
+        "Name": {
+            "type": "string"
+        },
+        "Link": {
+            "type": "string"
+        }
+    },
+    "config": {}
+}

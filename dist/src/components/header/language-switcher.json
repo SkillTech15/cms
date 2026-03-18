@@ -1,0 +1,26 @@
+{
+    "collectionName": "components_header_language_switchers",
+    "info": {
+        "displayName": "languageSwitcher"
+    },
+    "options": {},
+    "attributes": {
+        "Name": {
+            "type": "string"
+        },
+        "Icon": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "Link": {
+            "type": "string"
+        }
+    },
+    "config": {}
+}

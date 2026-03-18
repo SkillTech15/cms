@@ -1,0 +1,35 @@
+{
+    "kind": "singleType",
+    "collectionName": "contact_uses",
+    "info": {
+        "singularName": "contact-us",
+        "pluralName": "contact-uses",
+        "displayName": "Contact Us"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "LeftIntro": {
+            "type": "component",
+            "component": "contact-us.left-intro",
+            "repeatable": false
+        },
+        "FormConfig": {
+            "type": "component",
+            "component": "contact-us.form-config",
+            "repeatable": false
+        },
+        "StoreDetails": {
+            "type": "component",
+            "component": "contact-us.store-details",
+            "repeatable": false
+        },
+        "Map": {
+            "type": "component",
+            "component": "contact-us.map",
+            "repeatable": false
+        }
+    }
+}

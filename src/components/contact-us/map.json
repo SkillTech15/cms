@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_contact_us_maps",
+  "info": {
+    "displayName": "Map"
+  },
+  "options": {},
+  "attributes": {
+    "MapEmbedUrl": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

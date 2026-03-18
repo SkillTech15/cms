@@ -1,0 +1,34 @@
+{
+    "collectionName": "components_header_main_menus",
+    "info": {
+        "displayName": "mainMenu"
+    },
+    "options": {},
+    "attributes": {
+        "Name": {
+            "type": "string"
+        },
+        "Link": {
+            "type": "string"
+        },
+        "IsDropdown": {
+            "type": "boolean"
+        },
+        "Submenu": {
+            "type": "component",
+            "conditions": {
+                "visible": {
+                    "==": [
+                        {
+                            "var": "IsDropdown"
+                        },
+                        true
+                    ]
+                }
+            },
+            "component": "header.submenu",
+            "repeatable": true
+        }
+    },
+    "config": {}
+}

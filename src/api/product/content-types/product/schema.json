@@ -40,6 +40,13 @@
         "audios"
       ]
     },
+    "ProductDatasheet": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
     "isFeatured": {
       "type": "boolean"
     },

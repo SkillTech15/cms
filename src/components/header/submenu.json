@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_header_submenus",
+  "info": {
+    "displayName": "Submenu"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Link": {
+      "type": "string"
+    },
+    "IsDropdown": {
+      "type": "boolean"
+    }
+  },
+  "config": {}
+}

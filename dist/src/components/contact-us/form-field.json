@@ -1,0 +1,35 @@
+{
+    "collectionName": "components_contact_us_form_fields",
+    "info": {
+        "displayName": "FormField"
+    },
+    "options": {},
+    "attributes": {
+        "Key": {
+            "type": "string"
+        },
+        "Label": {
+            "type": "string"
+        },
+        "Type": {
+            "type": "enumeration",
+            "enum": [
+                "text",
+                "tel",
+                "email",
+                "textarea"
+            ]
+        },
+        "Required": {
+            "type": "boolean"
+        },
+        "Grid": {
+            "type": "enumeration",
+            "enum": [
+                "Normal",
+                "Full"
+            ]
+        }
+    },
+    "config": {}
+}

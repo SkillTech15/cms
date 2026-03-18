@@ -1,0 +1,27 @@
+{
+    "collectionName": "components_contact_us_store_details",
+    "info": {
+        "displayName": "StoreDetails"
+    },
+    "options": {},
+    "attributes": {
+        "StoreTitle": {
+            "type": "string"
+        },
+        "StoreAddress": {
+            "type": "blocks"
+        },
+        "ContactLinks": {
+            "type": "component",
+            "component": "contact-us.contact-links",
+            "repeatable": true
+        },
+        "OpeningTitle": {
+            "type": "string"
+        },
+        "OpeningText": {
+            "type": "blocks"
+        }
+    },
+    "config": {}
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_footer_sticky_action_buttons",
+  "info": {
+    "displayName": "StickyActionButton"
+  },
+  "options": {},
+  "attributes": {
+    "IsVisible": {
+      "type": "boolean",
+      "default": true
+    },
+    "Name": {
+      "type": "string"
+    },
+    "Link": {
+      "type": "string"
+    },
+    "IconClass": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

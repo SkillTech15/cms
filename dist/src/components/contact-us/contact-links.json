@@ -1,0 +1,27 @@
+{
+    "collectionName": "components_contact_us_contact_links",
+    "info": {
+        "displayName": "ContactLinks"
+    },
+    "options": {},
+    "attributes": {
+        "Type": {
+            "type": "enumeration",
+            "enum": [
+                "phone",
+                "whatsapp",
+                "email"
+            ]
+        },
+        "Value": {
+            "type": "string"
+        },
+        "DisplayText": {
+            "type": "string"
+        },
+        "IconClass": {
+            "type": "string"
+        }
+    },
+    "config": {}
+}

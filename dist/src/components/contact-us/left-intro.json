@@ -1,0 +1,16 @@
+{
+    "collectionName": "components_contact_us_left_intros",
+    "info": {
+        "displayName": "LeftIntro"
+    },
+    "options": {},
+    "attributes": {
+        "IntroTitle": {
+            "type": "string"
+        },
+        "IntroDescription": {
+            "type": "blocks"
+        }
+    },
+    "config": {}
+}

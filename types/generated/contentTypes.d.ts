@@ -430,6 +430,38 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiAboutUsAboutUs extends Struct.SingleTypeSchema {
+  collectionName: 'about_uses';
+  info: {
+    displayName: 'About Us';
+    pluralName: 'about-uses';
+    singularName: 'about-us';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    FullWidth: Schema.Attribute.Component<'about-us.full-width', false>;
+    info_card: Schema.Attribute.Component<'about-us.info-card', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::about-us.about-us'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    section_one: Schema.Attribute.Component<'about-us.split-section', false>;
+    section_two: Schema.Attribute.Component<'about-us.split-section', false>;
+    stat_item: Schema.Attribute.Component<'about-us.stat-item', true>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
   collectionName: 'blogs';
   info: {
@@ -441,7 +473,6 @@ export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    Author: Schema.Attribute.String;
     Content: Schema.Attribute.Blocks;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -488,6 +519,37 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
     products: Schema.Attribute.Relation<'oneToMany', 'api::product.product'>;
     publishedAt: Schema.Attribute.DateTime;
     Slug: Schema.Attribute.UID;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiContactUsContactUs extends Struct.SingleTypeSchema {
+  collectionName: 'contact_uses';
+  info: {
+    displayName: 'Contact Us';
+    pluralName: 'contact-uses';
+    singularName: 'contact-us';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    FormConfig: Schema.Attribute.Component<'contact-us.form-config', false>;
+    LeftIntro: Schema.Attribute.Component<'contact-us.left-intro', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::contact-us.contact-us'
+    > &
+      Schema.Attribute.Private;
+    Map: Schema.Attribute.Component<'contact-us.map', false>;
+    publishedAt: Schema.Attribute.DateTime;
+    StoreDetails: Schema.Attribute.Component<'contact-us.store-details', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -552,6 +614,39 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiProductEnquiryProductEnquiry
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'product_enquiries';
+  info: {
+    displayName: 'product-enquiry';
+    pluralName: 'product-enquiries';
+    singularName: 'product-enquiry';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Email: Schema.Attribute.Email;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::product-enquiry.product-enquiry'
+    > &
+      Schema.Attribute.Private;
+    Message: Schema.Attribute.Text;
+    Name: Schema.Attribute.String;
+    Phone: Schema.Attribute.String;
+    Product: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiProductProduct extends Struct.CollectionTypeSchema {
   collectionName: 'products';
   info: {
@@ -581,6 +676,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     PDF: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+    ProductDatasheet: Schema.Attribute.Media<'files'>;
     publishedAt: Schema.Attribute.DateTime;
     ShopPageHoverImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
@@ -595,6 +691,56 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+  };
+}
+
+export interface ApiRentalServiceRentalService
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'rental_services';
+  info: {
+    displayName: 'Rental-Services';
+    pluralName: 'rental-services';
+    singularName: 'rental-service';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    CallToAction: Schema.Attribute.Component<
+      'rental-services.call-to-action',
+      false
+    >;
+    CounterSection: Schema.Attribute.Component<
+      'rental-services.counter-section',
+      true
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    FAQSection: Schema.Attribute.Component<
+      'rental-services.faq-section',
+      false
+    >;
+    IntroSection: Schema.Attribute.Component<
+      'rental-services.intro-section',
+      false
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::rental-service.rental-service'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    Slug: Schema.Attribute.UID<'Title'>;
+    Title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    WorkSection: Schema.Attribute.Component<
+      'rental-services.work-section',
+      false
+    >;
   };
 }
 
@@ -1108,11 +1254,15 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::about-us.about-us': ApiAboutUsAboutUs;
       'api::blog.blog': ApiBlogBlog;
       'api::category.category': ApiCategoryCategory;
+      'api::contact-us.contact-us': ApiContactUsContactUs;
       'api::global.global': ApiGlobalGlobal;
       'api::home.home': ApiHomeHome;
+      'api::product-enquiry.product-enquiry': ApiProductEnquiryProductEnquiry;
       'api::product.product': ApiProductProduct;
+      'api::rental-service.rental-service': ApiRentalServiceRentalService;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

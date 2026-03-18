@@ -1,0 +1,30 @@
+{
+    "kind": "collectionType",
+    "collectionName": "product_enquiries",
+    "info": {
+        "singularName": "product-enquiry",
+        "pluralName": "product-enquiries",
+        "displayName": "product-enquiry"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "Name": {
+            "type": "string"
+        },
+        "Email": {
+            "type": "email"
+        },
+        "Phone": {
+            "type": "string"
+        },
+        "Message": {
+            "type": "text"
+        },
+        "Product": {
+            "type": "string"
+        }
+    }
+}

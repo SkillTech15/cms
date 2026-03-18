@@ -1,0 +1,17 @@
+{
+    "collectionName": "components_product_specifications",
+    "info": {
+        "displayName": "Specification",
+        "icon": "check"
+    },
+    "options": {},
+    "attributes": {
+        "Label": {
+            "type": "string"
+        },
+        "Value": {
+            "type": "string"
+        }
+    },
+    "config": {}
+}

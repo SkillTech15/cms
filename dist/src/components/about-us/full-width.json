@@ -1,0 +1,23 @@
+{
+    "collectionName": "components_about_us_full_widths",
+    "info": {
+        "displayName": "FullWidth"
+    },
+    "options": {},
+    "attributes": {
+        "FullWidthImage": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "ImageAlt": {
+            "type": "string"
+        }
+    },
+    "config": {}
+}

@@ -1,0 +1,60 @@
+{
+    "collectionName": "components_footer_footers",
+    "info": {
+        "displayName": "Footer"
+    },
+    "options": {},
+    "attributes": {
+        "Logo": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "LogoLink": {
+            "type": "string"
+        },
+        "AboutText": {
+            "type": "text"
+        },
+        "SocialIcons": {
+            "type": "component",
+            "component": "footer.social-icons",
+            "repeatable": true
+        },
+        "QuickLinkTitle": {
+            "type": "string"
+        },
+        "QuickLinksMenu": {
+            "type": "component",
+            "component": "footer.quick-links-menu",
+            "repeatable": true
+        },
+        "ProductsTitle": {
+            "type": "string"
+        },
+        "ProductsMenu": {
+            "type": "component",
+            "component": "footer.products-menu",
+            "repeatable": true
+        },
+        "ContactDetailsTitle": {
+            "type": "string"
+        },
+        "ContactDetails": {
+            "type": "component",
+            "component": "footer.contact-details",
+            "repeatable": true
+        },
+        "StickyActionButton": {
+            "type": "component",
+            "component": "footer.sticky-action-button",
+            "repeatable": true
+        }
+    },
+    "config": {}
+}

@@ -18,9 +18,6 @@
       "type": "uid",
       "targetField": "Title"
     },
-    "Author": {
-      "type": "string"
-    },
     "FeaturedImage": {
       "type": "media",
       "multiple": false,

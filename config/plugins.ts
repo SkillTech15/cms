@@ -1,15 +1,19 @@
-module.exports = ({ env }) => ({
-  upload: {
+export default ({ env }) => ({
+  email: {
     config: {
-      provider: '@strapi/provider-upload-cloudinary',
+      provider: "nodemailer",
       providerOptions: {
-        cloud_name: env('CLOUDINARY_NAME'),
-        api_key: env('CLOUDINARY_KEY'),
-        api_secret: env('CLOUDINARY_SECRET'),
+        host: env("SMTP_HOST"),
+        port: env.int("SMTP_PORT"),
+        secure: env.bool("SMTP_SECURE", false),
+        auth: {
+          user: env("SMTP_USER"),
+          pass: env("SMTP_PASS"),
+        },
       },
-      actionOptions: {
-        upload: {},
-        delete: {},
+      settings: {
+        defaultFrom: env("SMTP_FROM", "no-reply@yourdomain.com"),
+        defaultReplyTo: env("SMTP_REPLYTO", "sales@yourdomain.com"),
       },
     },
   },

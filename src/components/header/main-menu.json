@@ -13,6 +13,21 @@
     },
     "IsDropdown": {
       "type": "boolean"
+    },
+    "Submenu": {
+      "type": "component",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "IsDropdown"
+            },
+            true
+          ]
+        }
+      },
+      "component": "header.submenu",
+      "repeatable": true
     }
   },
   "config": {}

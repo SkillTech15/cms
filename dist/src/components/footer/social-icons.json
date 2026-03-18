@@ -1,0 +1,16 @@
+{
+    "collectionName": "components_footer_social_icons",
+    "info": {
+        "displayName": "SocialIcons"
+    },
+    "options": {},
+    "attributes": {
+        "IconClass": {
+            "type": "string"
+        },
+        "Link": {
+            "type": "string"
+        }
+    },
+    "config": {}
+}

@@ -1,0 +1,41 @@
+{
+    "collectionName": "components_home_side_banners",
+    "info": {
+        "displayName": "SideBanner"
+    },
+    "options": {},
+    "attributes": {
+        "Heading1": {
+            "type": "string"
+        },
+        "Heading2": {
+            "type": "string"
+        },
+        "Heading3": {
+            "type": "string"
+        },
+        "Heading4": {
+            "type": "string"
+        },
+        "Text": {
+            "type": "text"
+        },
+        "ButtonText": {
+            "type": "string"
+        },
+        "ButtonLink": {
+            "type": "string"
+        },
+        "BackgroundImage": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        }
+    },
+    "config": {}
+}

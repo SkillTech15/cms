@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_rental_services_work_sections",
+  "info": {
+    "displayName": "WorkSection"
+  },
+  "options": {},
+  "attributes": {
+    "MainTitle": {
+      "type": "string"
+    },
+    "WorkGrid": {
+      "type": "component",
+      "component": "rental-services.work-grid",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,40 @@
+{
+    "kind": "singleType",
+    "collectionName": "homes",
+    "info": {
+        "singularName": "home",
+        "pluralName": "homes",
+        "displayName": "Home"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "Hero": {
+            "type": "component",
+            "component": "home.hero",
+            "repeatable": true
+        },
+        "PromoCard": {
+            "type": "component",
+            "component": "home.promo-card",
+            "repeatable": true
+        },
+        "BrandLogo": {
+            "type": "component",
+            "component": "home.brand-logo",
+            "repeatable": true
+        },
+        "SideBanner": {
+            "type": "component",
+            "component": "home.side-banner",
+            "repeatable": false
+        },
+        "featureItem": {
+            "type": "component",
+            "component": "home.feature-item",
+            "repeatable": true
+        }
+    }
+}

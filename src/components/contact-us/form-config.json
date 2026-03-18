@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_contact_us_form_configs",
+  "info": {
+    "displayName": "FormConfig"
+  },
+  "options": {},
+  "attributes": {
+    "FormSubmitText": {
+      "type": "string"
+    },
+    "FormField": {
+      "type": "component",
+      "component": "contact-us.form-field",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

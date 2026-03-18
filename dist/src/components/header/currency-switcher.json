@@ -1,0 +1,16 @@
+{
+    "collectionName": "components_header_currency_switchers",
+    "info": {
+        "displayName": "currencySwitcher"
+    },
+    "options": {},
+    "attributes": {
+        "Name": {
+            "type": "string"
+        },
+        "Link": {
+            "type": "string"
+        }
+    },
+    "config": {}
+}

@@ -1,0 +1,18 @@
+{
+    "collectionName": "components_rental_services_faq_sections",
+    "info": {
+        "displayName": "FAQSection"
+    },
+    "options": {},
+    "attributes": {
+        "MainTitle": {
+            "type": "string"
+        },
+        "FAQItem": {
+            "type": "component",
+            "component": "rental-services.faq-item",
+            "repeatable": true
+        }
+    },
+    "config": {}
+}

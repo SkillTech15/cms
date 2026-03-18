@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_rental_services_counter_sections",
+  "info": {
+    "displayName": "CounterSection"
+  },
+  "options": {},
+  "attributes": {
+    "Value": {
+      "type": "integer"
+    },
+    "ValueSuffix": {
+      "type": "string"
+    },
+    "Label": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,32 @@
+{
+    "collectionName": "components_rental_services_intro_sections",
+    "info": {
+        "displayName": "IntroSection"
+    },
+    "options": {},
+    "attributes": {
+        "Title": {
+            "type": "string"
+        },
+        "Paragraph": {
+            "type": "blocks"
+        },
+        "Image": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "ButtonText": {
+            "type": "string"
+        },
+        "ButtonLink": {
+            "type": "string"
+        }
+    },
+    "config": {}
+}

@@ -49,6 +49,11 @@
       "type": "component",
       "component": "footer.contact-details",
       "repeatable": true
+    },
+    "StickyActionButton": {
+      "type": "component",
+      "component": "footer.sticky-action-button",
+      "repeatable": true
     }
   },
   "config": {}

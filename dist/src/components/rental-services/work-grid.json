@@ -1,0 +1,23 @@
+{
+    "collectionName": "components_rental_services_work_grids",
+    "info": {
+        "displayName": "WorkGrid"
+    },
+    "options": {},
+    "attributes": {
+        "Image": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "Title": {
+            "type": "string"
+        }
+    },
+    "config": {}
+}

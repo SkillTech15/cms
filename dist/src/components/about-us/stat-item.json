@@ -1,0 +1,22 @@
+{
+    "collectionName": "components_about_us_stat_items",
+    "info": {
+        "displayName": "stat_item"
+    },
+    "options": {},
+    "attributes": {
+        "Value": {
+            "type": "integer"
+        },
+        "ValueSuffix": {
+            "type": "string"
+        },
+        "Label": {
+            "type": "string"
+        },
+        "Description": {
+            "type": "text"
+        }
+    },
+    "config": {}
+}

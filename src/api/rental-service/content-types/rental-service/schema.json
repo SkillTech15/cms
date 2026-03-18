@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rental_services",
+  "info": {
+    "singularName": "rental-service",
+    "pluralName": "rental-services",
+    "displayName": "Rental-Services"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "IntroSection": {
+      "type": "component",
+      "component": "rental-services.intro-section",
+      "repeatable": false
+    },
+    "CounterSection": {
+      "type": "component",
+      "component": "rental-services.counter-section",
+      "repeatable": true
+    },
+    "WorkSection": {
+      "type": "component",
+      "component": "rental-services.work-section",
+      "repeatable": false
+    },
+    "CallToAction": {
+      "type": "component",
+      "component": "rental-services.call-to-action",
+      "repeatable": false
+    },
+    "FAQSection": {
+      "type": "component",
+      "component": "rental-services.faq-section",
+      "repeatable": false
+    }
+  }
+}

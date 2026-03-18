@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_rental_services_call_to_actions",
+  "info": {
+    "displayName": "CallToAction"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Paragraph": {
+      "type": "text"
+    },
+    "ButtonText": {
+      "type": "string"
+    },
+    "ButtonLink": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

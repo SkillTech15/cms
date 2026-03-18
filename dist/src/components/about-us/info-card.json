@@ -1,0 +1,16 @@
+{
+    "collectionName": "components_about_us_info_cards",
+    "info": {
+        "displayName": "info_card"
+    },
+    "options": {},
+    "attributes": {
+        "Title": {
+            "type": "string"
+        },
+        "Description": {
+            "type": "blocks"
+        }
+    },
+    "config": {}
+}
